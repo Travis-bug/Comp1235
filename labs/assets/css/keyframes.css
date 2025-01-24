@@ -1,0 +1,93 @@
+.move-right-back{
+  animation-name: move-right-back;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  -webkit-animation-name: move-right-back;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes move-right-back {  
+  0% { margin-left:0px;}
+  50% { margin-left:200px; }
+  100% { margin-left:0px; }
+}
+@-webkit-keyframes move-right-back {
+  0% { margin-left:0px;}
+  50% { margin-left:200px; }
+  100% { margin-left:0px; }
+}
+
+.turn-left{
+  animation-name: turn-left;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  -webkit-animation-name: turn-left;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes turn-left {  
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+@-webkit-keyframes turn-right {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+
+.social li a:hover, .turn-right{
+  animation-name: turn-right;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  -webkit-animation-name: turn-right;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes turn-right {  
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes turn-right {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.blink {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes blink {  
+  0% { opacity: 1; }
+  50% { opacity: .3; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: .3; }
+  100% { opacity: 1; }
+}

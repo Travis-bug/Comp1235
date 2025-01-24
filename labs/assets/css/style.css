@@ -1,0 +1,240 @@
+body{
+  background:#f8f8f8;
+  font-family: "Open Sans", sans-serif;
+}
+
+a{
+      cursor: pointer;
+    text-decoration: none;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+*:hover, *:focus, *:active {
+    outline: 0;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.profile-box{
+    min-height:300px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.profile{
+    padding: 57px 50px 15px 50px;
+}
+
+.picture{
+  width:41.66667%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display:inline-block;
+  box-sizing: border-box;
+  float: left;
+}
+
+img{
+  max-width:100%;
+}
+
+.profile-info{
+    color: #3d4451;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dedede;
+}
+
+.profile-preword{
+      margin-bottom: 28px;
+}
+
+.profile-preword > span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    display: inline-block;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.profile-preword > span:before{
+    content: '';
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 5px;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+    border-color: transparent;
+}
+
+.profile-title, .student_id{
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.student_id{
+  line-height:70px;
+  text-align:center;
+  font-size:65px;
+  color:#999;
+}
+
+.profile-title span{
+  font-weight: 300;
+}
+
+.profile-position{
+      font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.profile-list li{
+      margin-bottom: 13px;
+}
+
+.profile-list .title{
+      display: block;
+    width: 120px;
+    float: left;
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.profile-list .cont{
+      display: block;
+    margin-left: 125px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #9da0a7;
+}
+
+.profile-list .cont a{
+  color: inherit;
+}
+
+.details{
+  width:58.33333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display:inline-block;
+  box-sizing: border-box;
+}
+
+.profile-footer{
+    padding: 15px 0;
+}
+
+.social{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social li{
+    display: inline-block;
+    margin: 5px 15px;
+    line-height: 45px;
+}
+
+.social li a{
+  width: 45px;
+    height: 45px;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    -webkit-transition: -webkit-transition, background-color 0.25s linear 0s;
+    -moz-transition: -moz-transition, background-color 0.25s linear 0s;
+    transition: transition, background-color 0.25s linear 0s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.social li a:hover{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.social li a i{
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    display: block;
+}
+
+
+body > #gblearn_message_holder,
+body > small
+{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .student_id{
+        font-size:6vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+  .profile > .picture,
+  .profile > .details{
+    width:100%;
+  }
+  
+  .profile-list .title,
+  .profile-list .cont{
+    width:100%;
+    margin-left:0;
+    text-align:justify;
+  }
+  .student_id{
+        font-size:10vw;
+    }
+}
