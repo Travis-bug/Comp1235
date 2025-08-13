@@ -1,11 +1,44 @@
-<!DOCTYPE html>
+<!-- This is an HTMl comment
+Purpose : Practice HTML semantic elements
+-->
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>travis eweka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lab1.css">
+    <style>
+        body {
+            background-color: grey;
+        }
+    </style>
+    <script src="lab1.js"></script>
+    <script>
+        alert("Finished loading the external javascript page");
+    </script>
+    <title>Document</title>
 </head>
 <body>
-<script  src="lab1.js">
-</script>
+    <header>
+        <nav>
+            <a id="home-nav" href="https://www.google.com/">Home</a>
+            <a href="https://www.google.com/">Profile</a>
+            <a href="https://www.google.com/">Billing</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p> This is not an HTML semantic element </p>
+        </section>
+        <section>
+            <article class="news-article">Article 1</article>
+            <article class="news-article">Article 2</article>
+            <article>Article 3</article>
+        </section>
+    </main>
+    <footer> copyright by Assal</footer>
 </body>
 </html>

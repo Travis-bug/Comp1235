@@ -1,0 +1,58 @@
+/*
+
+CSS properties for grid containers
+-----------------------------------
+-display: grid;                         similar to display: flex;
+- grid-template: rows / columns;        combo property
+    - grid-template-row:
+    - grid-template-columns:
+- grid-gap: gapSizeForRow gapSizeForColum;
+
+These Grid container properties are less often used - use grid-gap insted
+---------------------------------------
+- justify-content:
+- justify-items:                        horizontally spaces the items
+- align-items:                          vertically spaces the items
+- align-content:
+
+CSS properties for Grid Items
+--------------------------
+align-self                              vertical spces the single item
+justify-self                            horizontal spaces the single item
+
+CSS Functions
+------------------------
+repeat(#times, size)
+minmax(minsize, maxsize)
+*/
+
+p {
+    border: 1px solid black;
+}
+
+section {
+    border: 1px solid green;
+    background-color: grey;
+}
+
+article {
+    border: 1px solid blue;
+}
+
+main {
+    border: 1px solid grey;
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(2, 100px);
+    grid-gap: 10px 20px;
+    justify-items: center;   /* horizontally centers the items in the rows*/
+    align-items: center; /* vertically centers the items */
+    grid-template-areas:
+        "section-1 section-1"
+        "section-2 section-3"
+        "empty empty"
+        ;
+}
+
+#section1 {
+    grid-area: section-1;
+}

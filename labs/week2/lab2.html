@@ -1,54 +1,59 @@
-<!DOCTYPE html>
+<!-- lab2.html
+Purpose:
+    Flexboxes
+    CSS Properties for the Flexbox container
+    - display: flex;
+    -flex-flow: row wrap;
+        - flex- direction: row; NOTE: ROW IS DEFAULT VALUE
+        - flex-wrap: wrap
+    - justify-content: space-evenly;
+    - align-items: stretch; NOTE: STRETCH IS DEFAULT VALUE
+
+
+-CSS Properties for the Flex-box  items
+----------------------------------------
+    - order:0; NOTE: 0 IS DEFAULT VALUE
+    - flex-grow: 0;
+    - flex-shrink: 1;
+    - flex-basis: 100px;
+    - align-self: flex-start;
+-->
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Eseosa Travis Eweka</title>
-  <!---1. head tag: used to write inline
-       2. elements of the page
-       a)html b)head c)body d)style e)nav f)ul g)li h)a
-        topic 1: FLEX BOW LAYOUT
-        Part A
-       1) display: flex
-       2) flex direction: row/column
-       3) align center: center, space around,
-       --->
-  <style>
-    html{
-      font-family: sans-serif;
-    }
-    body{
-      width:100%;
-      max-width:960px;
-    }
-    button{
-      font-size: 18px;
-      line-height:1.5;
-      width:15%;
-    }
-    div{
-      border: 5px solid black;
-      height:100px;
-     /*** part a ***/
-      display:flex;
-      flex-direction: row;
-      align-items: center;
-      /** part b **/
-justify-content: space-around;
-    }
-  </style>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab2.css">
 </head>
 <body>
-<div>
-  <button>
-    shrink
-  </button>
-
-  <button>
-smile
-  </button>
-    <button> laugh</button>
-    <button> cry</button>
-</div>
-
+    <header>
+        <nav>
+            <a class="profilea" href="https://www.youtube.com/">Profile-a</a>
+            <a id="billings" href="https://www.youtube.com/">Billing</a>
+            <a href="https://www.youtube.com/">Sign-out</a>
+            <a href="https://www.youtube.com/">Profile</a>
+            <a href="https://www.youtube.com/">Billing</a>
+            <a href="https://www.youtube.com/">Sign-out</a>
+            <a href="https://www.youtube.com/">Profile</a>
+            <a href="https://www.youtube.com/">Billing</a>
+            <a href="https://www.youtube.com/">Sign-out</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>Artical 1</article>
+            <article>Artical 2</article>
+            <article>Artical 3</article>
+        </section>
+        <section>
+            <article>Artical 1b</article>
+            <article>Artical 2b</article>
+            <article>Artical 3b</article>
+        </section>
+    </main>
+    <footer>Copyright &copy; by: Ahamed Assal</footer>
 </body>
 </html>

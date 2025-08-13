@@ -1,23 +1,19 @@
-alert("welcome to the page");
-//right click + inspect element, f12
-// console hide representation of the o/p
-console. log ("welcome to page....david");
-// declare a var: let
-let car_name = "BMW";
-//declare a constant: const
-const tax =0.13;
-let total ="10";
-//boolean(true of false)
-let toady=true;
-// array
-let friend=["gun, chu, farm"]
-let friend2=[1, 2, 3, 4, 5, 6];
-//document.write
-//comparison operators {if/else, <,>,=,>=,<=}
-// getting a DL
-let age =29
-if(age !==5 && age > 65){
-    document.write("not eligable");
-}else if(age > 13){"you are teenager"}
-else {"your perfect!"}
+// This is the single line comment in Javascript //
+/* This is a
+* multi line
+* comment
+*  */
 
+// let and const have local scope
+// var has global scope
+let username = "Assal"
+const userID  = 101576306 //const is used for variable with fixed size in memory space
+var isRegistered = true
+
+if (1 == "1"){
+    console.log("The number 1 was equal to the string 1")
+    // the above line will execute
+}
+if (username === "Assal") {
+    document.write("Your username was: " + username)
+}
